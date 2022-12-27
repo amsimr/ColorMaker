@@ -34,7 +34,8 @@
                 <Slider x:Name="sldGreen"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}"/>
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged"/>
 
 
                 <Label Text="Blue Value:"
@@ -42,7 +43,8 @@
                 <Slider x:Name="sldBlue"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}"/>
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged"/>
 
 
                 <Frame CornerRadius="25" HorizontalOptions="Center">
@@ -56,13 +58,15 @@
                                      HeightRequest="25"
                                      Source="copy.svg"
                                      VerticalOptions="Center"
-                                     WidthRequest="25"/>
+                                     WidthRequest="25"
+                                     Clicked="ImagenButton_Clicked"/>
                     </HorizontalStackLayout>
                 </Frame>
                 <Button x:Name="btnRandom"
                         BackgroundColor="{StaticResource Primary}"
                         Text="Generate Random Color"
-                        TextColor="White"/>
+                        TextColor="White"
+                        Clicked="btnRandom_Clicked"/>
             </VerticalStackLayout>
         </Frame>
     </Grid>
